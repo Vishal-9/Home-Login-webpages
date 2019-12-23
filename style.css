@@ -1,0 +1,157 @@
+
+body{
+    margin:0;
+    padding:0;
+    background: url(Film.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: scroll;
+}
+header{
+    position:relative;
+    max-width: 1200px;
+    margin:20px auto;
+    padding:10px;
+    background:rgba(0,0,0,.4);
+    box-sizing: border-box;
+    border-radius:4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo{
+    color:#191919;
+    background-color:#F5C515;
+    height:60px;
+    font:36px "Helvetica";
+    font-size:36px;
+    border-radius: 10px;
+    line-height: 60px;
+    padding:0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float:left;
+    font-weight: 800;
+    text-decoration: none;
+}
+.loginbox{
+    max-width: 700px;
+    float: none;
+    margin:150px auto;
+}
+.login-left{
+    background:rgba(0,0,0,0.3);
+    padding:30px;
+}
+
+.login-right{
+    background:rgba(0,0,0,.7);
+    padding:30px;
+}
+.form-control{
+    background-color: transparent !important;
+    color:#ebebeb !important;
+}
+h2{
+    color:#F5C515;
+    font:36px "Helvetica";
+    
+}
+label{
+    color:#ebebeb;
+    font:16px "Helvetica";
+}
+.btn-primary{
+    color:black !important;
+    background-color: #F5C515 !important;
+}
+
+
+
+
+
+
+
+
+nav{
+    float:right;
+}
+.clearfix{
+    clear: both;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    display:flex; 
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display:block;
+    margin:10px 0;
+    font:16px "Helvetica";
+    padding:10px 20px;
+    text-decoration: none;
+    color:#ebebeb;
+}
+nav ul li a.active{
+    
+    color:#F5C515;
+    transition: 0.5s;
+}
+nav ul li:hover{
+    background: rgba(0,0,0,.2);
+}
+@media(max-width:1200px){
+    header{
+        margin:20px;
+    }
+}
+@media(max-width:768px){
+    .menu-toggle{
+        display:block;
+        width:40px;
+        height:40px;
+        margin:10px;
+        float:right;
+        cursor: pointer;
+        text-align: center;
+        font-size:30px;
+        color:#ebebeb;   
+    }
+    .menu-toggle:before{
+        content:'\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before{
+        content:'\f00d';
+    }
+    nav{
+        display:none;
+    }
+    nav.active{
+        display:block;
+        width:100%;
+    }
+    nav.active ul{
+        display:block;
+    }
+    nav.active ul li a{
+        margin:0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
